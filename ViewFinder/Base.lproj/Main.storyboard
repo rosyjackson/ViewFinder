@@ -33,19 +33,15 @@
                             <outlet property="delegate" destination="BSF-uE-lsU" id="lt8-ty-OOA"/>
                         </connections>
                     </tableView>
+                    <toolbarItems/>
                     <navigationItem key="navigationItem" title="ViewFinder" id="lrd-uy-OIu">
-                        <barButtonItem key="rightBarButtonItem" style="plain" id="fcm-EA-iwF">
-                            <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="LGN-RX-hN1">
-                                <rect key="frame" x="302" y="0.0" width="92" height="44"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
-                                <state key="normal" title="+"/>
-                            </button>
+                        <barButtonItem key="rightBarButtonItem" title="+" id="gTX-QS-9qr">
                             <connections>
-                                <segue destination="KPY-S6-NHX" kind="show" id="gnP-e3-LYf"/>
+                                <segue destination="KPY-S6-NHX" kind="show" id="KCW-Ud-W0q"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
+                    <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="0Ig-fp-052" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

@@ -71,30 +71,46 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                 <state key="normal" title="Camera"/>
+                                <connections>
+                                    <action selector="cameraButton:" destination="KPY-S6-NHX" eventType="touchUpInside" id="noZ-9m-jdB"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HpJ-Ol-qoB">
                                 <rect key="frame" x="50" y="493" width="150" height="64"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                 <state key="normal" title="Save"/>
+                                <connections>
+                                    <action selector="saveButton:" destination="KPY-S6-NHX" eventType="touchUpInside" id="xKo-vF-Pon"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="u1V-7i-gkk">
                                 <rect key="frame" x="208" y="493" width="150" height="64"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                 <state key="normal" title="Album"/>
+                                <connections>
+                                    <action selector="albumButton:" destination="KPY-S6-NHX" eventType="touchUpInside" id="02c-I1-Uqe"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Bv3-m2-18s">
                                 <rect key="frame" x="208" y="398" width="150" height="64"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                 <state key="normal" title="Photo Library"/>
+                                <connections>
+                                    <action selector="photoLibraryButton:" destination="KPY-S6-NHX" eventType="touchUpInside" id="KmF-Md-C8F"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="gl5-RW-iM7"/>
                     </view>
                     <navigationItem key="navigationItem" title="Add New Photo" id="JdY-K1-JoP"/>
+                    <connections>
+                        <outlet property="imageOutlet" destination="TnR-zg-ju1" id="79o-Ec-UAx"/>
+                        <outlet property="textFieldOutlet" destination="gbk-yr-56V" id="BOQ-J1-bQk"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="kHY-Al-HzB" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
